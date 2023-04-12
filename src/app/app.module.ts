@@ -12,6 +12,7 @@ import { UniversalExchangeComponent } from './universal-exchange/universal-excha
 import { TcpComponent } from './tcp/tcp.component';
 import { SociyallComponent } from './sociyall/sociyall.component';
 import { ContactComponent } from './contact/contact.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ContactComponent } from './contact/contact.component';
     UniversalExchangeComponent,
     TcpComponent,
     SociyallComponent,
-    ContactComponent
+    ContactComponent,
+    AboutusComponent
   ],
   imports: [
     BrowserModule,

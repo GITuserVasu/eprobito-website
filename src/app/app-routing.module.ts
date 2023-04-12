@@ -35,6 +35,10 @@ const routes: Routes = [
   {
     path:'contact',
     component:ContactComponent
+  },
+  {
+    path:'aboutus',
+    component:AboutusComponent
   }
 ];
 
