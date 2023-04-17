@@ -1,53 +1,4 @@
-<div class="header">
-    <header>
-        <div class="navbar yamm navbar-default navbar-top">
-            <div class="container">
-                
-                <div id="navbar-collapse-1" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <!-- Classic list -->
-                    	<li class="dropdown yamm-fw yamm-fw5">
-                            <a href = "#" ><i class="icon-home"></i>Home</a>
-                        </li>
-                        <li>
-                            <a href ="#about-us-content"><i class="icon-user"></i>About Us </a>
-                            
-                        </li>
-                        <li class="dropdown">
-                            <a href="#services-content"><i class="icon-file"></i>Services</a>
-                        <!--    <ul class="dropdown-menu yamm-sm">
-                                <li><a href="">Product Services</a></li>
-                                <li><a href="">R & D Services</a></li>
-                                <li><a href="">Data Services</a></li>
-                                <li><a href="">AI Tools</a></li>
-                                
-                            </ul> -->
-                        </li> 
-                        <li>
-                            <a href="#products-content"><i class="icon-foursquare"></i>Products</a>
-                            
-                        </li> 
-                     	<li class="dropdown">
-                            <a href="#contact-content" data-toggle="dropdown" class="dropdown-toggle"><i class="icon-envelope"></i>Contact Us</a>
-                            
-                        </li>
-                    <!--    <li class="dropdown">
-                            <a href="#" data-toggle="dropdown" class="dropdown-toggle"><i class="icon-envelope"></i>News 'n' Views</a>
-                            
-                        </li> -->
-                    <!--	<li style="margin-top: 22px;">
-                            <button class="btn btn-primary" style="    background: #00374e;
-                            color: white;" data-toggle="modal" data-target="#exampleModal">Download</button>
-                        </li> -->
-                    </ul>
-                    <!-- Search Form -->
-                
-                    <!-- End Search Form -->
-                </div>
-            </div>
-        </div>
-    </header>
-</div>
+
 <!-- REVOLUTION SLIDER
 	============================================= -->
 <div class="fullwidthbanner-container top-shadow">
@@ -453,20 +404,20 @@
 						<div class="form-message"></div>
 						<!-- Form -->
 						<!-- <form class="b-form b-contact-form" action="http://www.ckthemes.com/html/boson/contact.php"> -->
-					    <form class="b-form b-contact-form" action="http://www.eprobito.com/contact.php">	
+					    <form class="b-form b-contact-form" [formGroup]="contactForm">	
 							<div class="input-wrap m-full-width">
 								<i class="icon-user"></i>
-								<input class="field-name" type="text" placeholder="Name (required)">
+								<input class="field-name" type="text" placeholder="Name (required)" formControlName="name">
 							</div>
 							<div class="input-wrap m-full-width">
 								<i class="icon-envelope"></i>
-								<input class="field-email" type="text" placeholder="E-mail (required)">
+								<input class="field-email" type="text" placeholder="E-mail (required)" formControlName="email">
 							</div>
 							<div class="textarea-wrap">
 								<i class="icon-pencil"></i>
-								<textarea class="field-comments" placeholder="Message"></textarea>
+								<textarea class="field-comments" placeholder="Message" formControlName="msg"></textarea>
 							</div>
-							<input class="btn-submit btn colored" type="submit" value="Send">
+							<input class="btn-submit btn colored" type="submit" value="Send" (click)="onSubmit()">
 						</form>
 						<!-- End Form -->
 					</div>
