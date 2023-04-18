@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
 import { ServicePageService } from '../service-page.service';
 
 
